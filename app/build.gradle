@@ -5,13 +5,12 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.0'
-        classpath 'com.google.gms:google-services:4.3.15' // ✅ good
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
 plugins {
     id 'com.android.application'
-    // ❌ Don't put google-services here
 }
 
 android {
@@ -54,6 +53,12 @@ dependencies {
     implementation libs.activity
     implementation libs.constraintlayout
     implementation libs.play.services.location
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+
+
 
     // Google Maps
     implementation 'com.google.android.gms:play-services-maps:18.2.0'
