@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "293115231230",
+    "firebase_url": "https://fir-realtime-664b4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-realtime-664b4",
+    "storage_bucket": "fir-realtime-664b4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293115231230:android:2b9130a0b31b9ccc981eaf",
+        "android_client_info": {
+          "package_name": "com.example.uas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIaAI6H9iIgF8wmaXo1Hk4AE7FCyLsycw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
