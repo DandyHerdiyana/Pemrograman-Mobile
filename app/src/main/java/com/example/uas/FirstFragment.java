@@ -24,11 +24,11 @@ public class FirstFragment extends Fragment {
 							 @Nullable Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_first, container, false);
 
-		// Initialize views
+		//views
 		firstFragmentButton = view.findViewById(R.id.firstFragment);
-		spinnerCategory = view.findViewById(R.id.spinnerCategory); // Make sure this ID exists in XML
+		spinnerCategory = view.findViewById(R.id.spinnerCategory);
 
-		// Set Spinner items
+		// spinner
 		String[] categories = {"Student", "Worker", "etc.."};
 		ArrayAdapter<String> adapter = new ArrayAdapter<>(
 				requireContext(),
@@ -38,7 +38,7 @@ public class FirstFragment extends Fragment {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinnerCategory.setAdapter(adapter);
 
-		// Button click listener
+		// Button
 		firstFragmentButton.setOnClickListener(v -> {
 			String selected = spinnerCategory.getSelectedItem().toString();
 			Toast.makeText(getContext(), "Selected: " + selected, Toast.LENGTH_SHORT).show();

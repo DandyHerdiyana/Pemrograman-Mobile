@@ -103,7 +103,7 @@ public class SecondFragment extends Fragment {
                 });
     }
 
-    // Lifecycle methods for MapView
+    // mapView
     @Override
     public void onResume() {
         super.onResume();
