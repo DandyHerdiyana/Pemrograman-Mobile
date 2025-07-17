@@ -103,6 +103,7 @@ public class SecondFragment extends Fragment {
                 });
     }
 
+
     // mapView
     @Override
     public void onResume() {

@@ -31,10 +31,19 @@
 
         <!-- Title -->
         <TextView
-            android:id="@+id/textTitle"
+            android:id="@+id/textTitle0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to UAS App"
+            android:text="Freddy Fazbear Restaurant"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Aplication"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -47,7 +56,7 @@
             android:id="@+id/firstFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Open First Fragment" />
+            android:text="Open Form (First Fragment)" />
 
         <View android:layout_width="match_parent" android:layout_height="16dp" />
 
@@ -55,7 +64,7 @@
             android:id="@+id/secondFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Open Second Fragment" />
+            android:text="Open Map (Second Fragment)" />
     </LinearLayout>
 
     <!-- Fragment container -->
