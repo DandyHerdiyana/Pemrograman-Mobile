@@ -1,6 +1,17 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.google.gms:google-services:4.3.15' // ✅ good
+    }
+}
+
 plugins {
     id 'com.android.application'
-    id 'com.google.gms.google-services' // Apply this here, not with 'apply plugin'
+    // ❌ Don't put google-services here
 }
 
 android {
@@ -47,10 +58,14 @@ dependencies {
     // Google Maps
     implementation 'com.google.android.gms:play-services-maps:18.2.0'
 
-    // Firebase Analytics (example - add more as needed)
+    // Firebase Analytics
     implementation 'com.google.firebase:firebase-analytics'
 
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }
+
+
+// ✅ Correct place to apply this plugin:
+apply plugin: 'com.google.gms.google-services'
